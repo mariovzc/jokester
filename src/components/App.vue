@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <h3>Got jokes?</h3>
-    <button class="btn btn-primary" @click="initJokes">Add Ten random jokes</button>
+    <button class="btn btn-primary" @click="initJokes">Add ten random jokes</button>
+    <button class="btn btn-secondary" @click="addJoke">Add random joke</button>
     <br>
     <br>
     <div class="col-md-12">
@@ -18,7 +19,8 @@ import { mapActions } from 'vuex'
 import Joke from './Joke.vue'
 export default {
   methods: mapActions([
-    'initJokes'
+    'initJokes',
+    'addJoke'
   ]),
   components: {
     Joke
